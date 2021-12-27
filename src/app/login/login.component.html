@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <h1>Welcome</h1>
+  <p>Sign into Car Hop or <a href="/">create an account</a></p>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <chl-input label="Username" id="username" isRequired="true" [control]="loginForm.get('username')" errorMessage="Username is required"></chl-input>
+    <chl-input label="Password" id="password" isRequired="true" [control]="loginForm.get('password')" errorMessage="Password is required"></chl-input>
+    <button class="button primary" type="submit" [disabled]="loginForm.invalid">Sign in</button>
+  </form>
+</div>

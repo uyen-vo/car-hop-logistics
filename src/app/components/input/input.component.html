@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <label [for]="id">{{label}}</label>
+  <input
+    type="text"
+    [id]="id"
+    [name]="id"
+    [required]="isRequired"
+    [formControl]="control"
+    >
+  <div class="form-error"
+    *ngIf="(control.touched || control.dirty) && control.errors?.required">
+    {{ errorMessage }}
+  </div>
+</div>

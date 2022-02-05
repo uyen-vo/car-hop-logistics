@@ -12,4 +12,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToContact(): void {
+    let el = document.getElementById('contact');
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+
 }

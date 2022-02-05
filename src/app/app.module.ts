@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './landing/landing.component';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
+import { ContactComponent } from './contact/contact.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -22,7 +23,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     HomeComponent,
     InputComponent,
     LandingComponent,
-    TextareaComponent
+    TextareaComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

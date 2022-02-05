@@ -1,0 +1,35 @@
+<section>
+    <h2>Looking to ship your vehicle?</h2>
+    <p>🔒 Lock in your rate today! 🔒</p>
+    <p>Submit your shipment request and we will provide a free quote and delivery estimate.</p>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="cell">
+            <chl-input label="Name" id="name" isRequired="true" [control]="contactForm.get('name')" errorMessage="Name is required"></chl-input>
+        </div>
+        <div class="cell">
+            <chl-input label="Email" id="email" isRequired="true" [control]="contactForm.get('email')" errorMessage="Email is required"></chl-input>
+        </div>
+        <div class="cell">
+            <chl-input label="Phone Number" id="phone" isRequired="true" [control]="contactForm.get('phone')" errorMessage="Phone is required"></chl-input>
+        </div>
+        <div class="cell half">
+            <chl-input label="Origin" id="origin" isRequired="true" [control]="contactForm.get('origin')" errorMessage="Origin is required"></chl-input>
+        </div>
+        <div class="cell half">
+            <chl-input label="Destination" id="destination" isRequired="true" [control]="contactForm.get('destination')" errorMessage="Destination is required"></chl-input>
+        </div>
+        <div class="cell">
+            <chl-input label="Number of Vehicles" id="numVehicles" isNumberField="true" isRequired="true" [control]="contactForm.get('numVehicles')" errorMessage="Number of vehicles is required"></chl-input>
+        </div>
+        <div class="cell">
+            <chl-input label="Delivery date" id="date" isRequired="true" [control]="contactForm.get('date')" errorMessage="Date is required"></chl-input>
+        </div>
+        <div class="cell">
+            <chl-input label="Approximate weight (lbs)" id="weight" isNumberField="true" [control]="contactForm.get('weight')"></chl-input>
+        </div>
+        <div class="cell">
+            <chl-textarea label="Message" id="message" [control]="contactForm.get('message')"></chl-textarea>
+        </div>
+        <button class="button primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
+    </form>
+</section>

@@ -35,9 +35,15 @@ html {
   font-size: 1rem;
 }
 
+a {
+  cursor: pointer;
+}
+
 .link {
-    color: $link;
+    color: $primary;
     font-weight: medium;
+    text-decoration: underline;
+    cursor: pointer;
   &:visited {
     color: $primary;
   }

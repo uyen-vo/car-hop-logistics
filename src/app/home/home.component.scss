@@ -41,15 +41,18 @@ nav {
   // top: 0;
 }
 
-.router-container {
-  flex-grow: 1;
-}
-
 footer {
   padding: 2rem;
   background-color: $secondary;
   color: white;
   text-align: center;
+  .copy {
+    font-size: 12px;
+    margin-top: .5rem;
+  }
+  p {
+    margin: 0;
+  }
 }
 
 .wrapper {

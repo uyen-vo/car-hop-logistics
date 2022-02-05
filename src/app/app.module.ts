@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './landing/landing.component';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { ContactComponent } from './contact/contact.component';
+import { BookComponent } from './book/book.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -24,7 +25,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     InputComponent,
     LandingComponent,
     TextareaComponent,
-    ContactComponent
+    ContactComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,6 @@ export class TextareaComponent implements OnInit {
   @Input() isRequired: boolean;
   @Input() control: FormControl;
   @Input() errorMessage: string;
-  @Input() phoneMask: boolean;
   @Input() isNumberField: boolean;
 
   constructor() { }

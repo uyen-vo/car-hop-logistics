@@ -4,11 +4,12 @@
   </label>
   <input
     [type]="isNumberField ? 'number' : 'text'"
+    [min]="isNumberField ? 0 : null"
     [id]="id"
     [name]="id"
     [required]="isRequired"
     [formControl]="control"
-    [mask]="phoneMask ? '(000) 000-0000' : null"
+    [mask]="id == 'phone' ? '(000) 000-0000' : id == 'date' ? 'M0/d0/0000' : null"
     [email]="id == 'email' ? true : false">
   <div class="form-error"
     *ngIf="(control.touched || control.dirty) && control.errors?.required">
@@ -16,7 +17,7 @@
   </div>
   <div class="form-error"
     *ngIf="(control.touched || control.dirty) && control.errors?.mask">
-    Please enter valid phone number
+    Please enter valid {{ label | lowercase }}
   </div>
   <div class="form-error"
     *ngIf="(control.touched || control.dirty) && control.errors?.email">

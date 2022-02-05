@@ -14,6 +14,7 @@ export class LandingComponent implements OnInit {
     phone: new FormControl('', Validators.required),
     origin: new FormControl('', Validators.required),
     destination: new FormControl('', Validators.required),
+    date: new FormControl('', Validators.required),
     numVehicles: new FormControl('', Validators.required),
     weight: new FormControl(''),
     message: new FormControl(''),

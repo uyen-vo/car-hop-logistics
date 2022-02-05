@@ -2,15 +2,15 @@
   <nav>
     <ul>
       <li>
-        <a href="#home">
+        <a [routerLink]="['']">
           <!-- <div class="logo-image"> -->
             <img src="image" class="img-fluid">
           <!-- </div> -->
         </a>
       </li>
-      <li><a href="#news">Ship Vehicles</a></li>
-      <li><a href="#contact">Find Shipments</a></li>
-      <li><a class="active" href="#about">Contact</a></li>
+      <li><a [routerLink]="['/ship']">Ship Vehicles</a></li>
+      <li><a [routerLink]="['/book']">Find Shipments</a></li>
+      <li><a [routerLink]="['/contact']" href="#about">Contact</a></li>
     </ul>
   </nav>
   
@@ -18,7 +18,8 @@
     <router-outlet></router-outlet>
   </div>
 
-  <!-- <footer>
-    Design and implementation by @uyen-vo
-  </footer> -->
+  <footer>
+    <!-- Social media -->
+    &copy; 2022 Car Hop Logistics, LLC. All rights reserved.
+  </footer>
 </div>

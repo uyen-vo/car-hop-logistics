@@ -1,0 +1,24 @@
+<header>
+    <div class="background-image"></div>
+    <section id="intro">
+        <h1>Car Hop Logistics</h1>
+        <p>Brokerage services for auto transport and vehicle shipping</p>
+    </section>
+</header>
+<main class="wrapper">
+    <section>
+        <h2>Looking to ship your vehicle?</h2>
+        <p>Submit your shipment request today and we will provide a free quote and delivery estimate.</p>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <chl-input label="Name" id="name" isRequired="true" [control]="contactForm.get('name')" errorMessage="Name is required"></chl-input>
+            <chl-input label="Email" id="email" isRequired="true" [control]="contactForm.get('email')" errorMessage="Email is required"></chl-input>
+            <chl-input label="Phone Number" id="phone" isRequired="true" [control]="contactForm.get('phone')" [phoneMask]="true" errorMessage="Phone is required"></chl-input>
+                <button class="button primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
+        </form>
+        <!-- origin, destination, #vehicles, weight, date -->
+    </section>
+
+    <section>
+        Be the next in line to ship your vehicle with Car Hop Logistics.
+    </section>
+</main>

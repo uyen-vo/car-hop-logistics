@@ -12,6 +12,7 @@ export class InputComponent implements OnInit {
   @Input() isRequired: boolean;
   @Input() control: FormControl;
   @Input() errorMessage: string;
+  @Input() phoneMask: boolean;
 
   constructor() { }
 

@@ -37,7 +37,24 @@ li img {
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  width: 100vw;
+  // position: absolute;
+  // top: 0;
+}
+
+.router-container {
+  flex-grow: 1;
+}
+
+footer {
+  padding: 2rem;
+  background-color: $secondary;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 }

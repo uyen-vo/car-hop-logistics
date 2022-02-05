@@ -1,5 +1,5 @@
 .background-image {
-    background-image: url('../../assets/images/bg-1.jpg');
+    background-image: url('../../assets/images/bg-2.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center top;
@@ -13,21 +13,32 @@
 }
 
 .wrapper {
-    padding: 0 2rem;
+    padding: 2rem 0rem;
+    text-align: center;
 }
 
 header {
     width: 100vw;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 
 #intro {
+    background-color: white;
     margin-left: calc(50% + 100px);
+    padding: 2rem;
+    width: 50%;
     h1 {
         font-size: 5rem;
         margin-bottom: 1rem;
+        line-height: 5rem;
     }
+}
+
+form {
+    margin: auto;
+    width: 75%;
+    max-width: 500px;
 }

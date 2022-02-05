@@ -10,12 +10,13 @@ import { Title } from '@angular/platform-browser';
 export class LandingComponent implements OnInit {
   contactForm = new FormGroup({
     name: new FormControl('', Validators.required),
-    email: new FormControl('', [
-      Validators.required,
-      Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")
-    ]),
+    email: new FormControl('', Validators.required),
     phone: new FormControl('', Validators.required),
-    note: new FormControl('', Validators.required),
+    origin: new FormControl('', Validators.required),
+    destination: new FormControl('', Validators.required),
+    numVehicles: new FormControl('', Validators.required),
+    weight: new FormControl(''),
+    message: new FormControl(''),
   });
 
   constructor(private _titleService: Title) { }

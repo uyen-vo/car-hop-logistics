@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <label [for]="id">{{label}}
+    <span *ngIf="isRequired">*</span>
+  </label>
+  <textarea
+    [id]="id"
+    [name]="id"
+    [required]="isRequired"
+    [formControl]="control"
+  ></textarea>
+  <div class="form-error"
+    *ngIf="(control.touched || control.dirty) && control.errors?.required">
+    {{ errorMessage }}
+  </div>
+</div>

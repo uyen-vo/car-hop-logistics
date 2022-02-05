@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'chl-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss']
+  selector: 'chl-textarea',
+  templateUrl: './textarea.component.html',
+  styleUrls: ['./textarea.component.scss']
 })
-export class InputComponent implements OnInit {
+export class TextareaComponent implements OnInit {
   @Input() id: string;
   @Input() label: string;
   @Input() isRequired: boolean;
@@ -14,7 +14,6 @@ export class InputComponent implements OnInit {
   @Input() errorMessage: string;
   @Input() phoneMask: boolean;
   @Input() isNumberField: boolean;
-  @Input() hasPatternValidator: boolean;
 
   constructor() { }
 

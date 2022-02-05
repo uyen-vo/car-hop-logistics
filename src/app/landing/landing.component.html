@@ -2,7 +2,9 @@
     <div class="background-image"></div>
     <section id="intro">
         <h1>Car Hop Logistics</h1>
-        <p>Brokerage services for auto transport and vehicle shipping</p>
+        <p>🚗 Brokerage services for auto transport and vehicle shipping</p>
+        <p>➡️ Become the next in line to ship your vehicle!</p>
+        <p>📞 <a class="link" [routerLink]="['/contact']">Contact us</a> today for a free quote and delivery estimate.</p>
     </section>
 </header>
 <main class="wrapper">
@@ -11,14 +13,15 @@
         <p>Submit your shipment request today and we will provide a free quote and delivery estimate.</p>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <chl-input label="Name" id="name" isRequired="true" [control]="contactForm.get('name')" errorMessage="Name is required"></chl-input>
-            <chl-input label="Email" id="email" isRequired="true" [control]="contactForm.get('email')" errorMessage="Email is required"></chl-input>
+            <chl-input label="Email" id="email" isRequired="true" hasPatternValidator="true" [control]="contactForm.get('email')" errorMessage="Email is required"></chl-input>
             <chl-input label="Phone Number" id="phone" isRequired="true" [control]="contactForm.get('phone')" [phoneMask]="true" errorMessage="Phone is required"></chl-input>
-                <button class="button primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
+            <chl-input label="Origin" id="origin" isRequired="true" [control]="contactForm.get('origin')" errorMessage="Origin is required"></chl-input>
+            <chl-input label="Destination" id="destination" isRequired="true" [control]="contactForm.get('destination')" errorMessage="Destination is required"></chl-input>
+            <chl-input label="Number of Vehicles" id="numVehicles" isNumberField="true" isRequired="true" [control]="contactForm.get('numVehicles')" errorMessage="Number of vehicles is required"></chl-input>
+            <chl-input label="Approximate weight (lbs)" id="weight" isNumberField="true" [control]="contactForm.get('weight')"></chl-input>
+            <chl-textarea label="Message" id="message" [control]="contactForm.get('message')"></chl-textarea>
+            <button class="button primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
         </form>
         <!-- origin, destination, #vehicles, weight, date -->
-    </section>
-
-    <section>
-        Be the next in line to ship your vehicle with Car Hop Logistics.
     </section>
 </main>

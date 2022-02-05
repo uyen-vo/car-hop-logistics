@@ -3,14 +3,23 @@
     <span *ngIf="isRequired">*</span>
   </label>
   <input
-    type="text"
+    [type]="isNumberField ? 'number' : 'text'"
     [id]="id"
     [name]="id"
     [required]="isRequired"
     [formControl]="control"
-    [mask]="phoneMask ? '(000) 000-0000' : null">
+    [mask]="phoneMask ? '(000) 000-0000' : null"
+    [email]="id == 'email' ? true : false">
   <div class="form-error"
     *ngIf="(control.touched || control.dirty) && control.errors?.required">
     {{ errorMessage }}
+  </div>
+  <div class="form-error"
+    *ngIf="(control.touched || control.dirty) && control.errors?.mask">
+    Please enter valid phone number
+  </div>
+  <div class="form-error"
+    *ngIf="(control.touched || control.dirty) && control.errors?.email">
+    Please enter valid email
   </div>
 </div>

@@ -7,7 +7,7 @@ const routes: Routes = [{
   component: LandingComponent,
 },
 {
-  path: '/contact',
+  path: 'contact',
   component: LandingComponent,
 }];
 

@@ -3,6 +3,7 @@
     <span *ngIf="isRequired">*</span>
   </label>
   <input
+    [class.error]="(control.touched || control.dirty) && control.errors"
     [type]="isNumberField ? 'number' : 'text'"
     [min]="isNumberField ? 0 : null"
     [id]="id"

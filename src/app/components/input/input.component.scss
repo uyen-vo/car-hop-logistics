@@ -20,8 +20,16 @@ input {
   &:focus {
     border-color: $primary;
   }
+  
+  .error {
+    border-color: $error;
+  }
 }
 
 span {
   color: $error;
+}
+
+.error {
+  border-color: $error;
 }

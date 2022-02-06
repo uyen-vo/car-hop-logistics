@@ -26,8 +26,13 @@ li a {
 
 #logo {
   padding: 0 16px;
+  height: 100%;
+  display: block; 
   img {
     height: 49px;
+    position: relative;
+    top: 50%;
+    transform: translateY(7%);
   }
 }
 

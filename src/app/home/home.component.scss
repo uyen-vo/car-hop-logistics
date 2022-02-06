@@ -24,16 +24,19 @@ li a {
   text-decoration: none;
 }
 
+#logo {
+  padding: 0 16px;
+  img {
+    height: 49px;
+  }
+}
+
 li a:hover:not(.active) {
   background-color: $secondary-accent;
 }
 
 .active {
   background-color: $primary;
-}
-
-li img {
-  display: block;
 }
 
 nav {

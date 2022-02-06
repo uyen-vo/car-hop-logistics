@@ -30,11 +30,6 @@ header {
     margin-left: calc(50% + 50px);
     padding: 2rem;
     width: 50%;
-    h1 {
-        font-size: 5rem;
-        margin-bottom: 1rem;
-        line-height: 5rem;
-    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -49,27 +44,21 @@ header {
 
     #contact {
         background: white;
-        width: calc(100% - 5rem);
         margin: auto;
         margin-bottom: 3rem;
     }
+
     #intro {
         margin: auto;
         margin-top: 3rem;
         width: calc(100% - 9rem);
         margin-bottom: 3rem;
-        h1 {
-            font-size: 4rem;
-        }
     }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1360px) {
     #intro {
-    margin-left: calc(40%);
-    width: 60%;
-    h1 {
-        font-size: 4rem;
-    }
+        margin-left: calc(40%);
+        width: 60%;
     }
 }

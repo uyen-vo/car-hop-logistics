@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BookComponent } from './book/book.component';
 import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [{
@@ -7,8 +8,8 @@ const routes: Routes = [{
   component: LandingComponent,
 },
 {
-  path: 'contact',
-  component: LandingComponent,
+  path: 'book',
+  component: BookComponent,
 }];
 
 @NgModule({

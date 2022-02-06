@@ -1,7 +1,5 @@
 <section>
-    <h2>Looking to ship your vehicle?</h2>
-    <p>🔒 Lock in your rate today! 🔒</p>
-    <p>Submit your shipment request and we will provide a free quote and delivery estimate.</p>
+    <ng-content></ng-content>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="cell">
             <chl-input label="Name" id="name" isRequired="true" [control]="contactForm.get('name')" errorMessage="Name is required"></chl-input>
@@ -19,7 +17,7 @@
             <chl-input label="Destination" id="destination" isRequired="true" [control]="contactForm.get('destination')" errorMessage="Destination is required"></chl-input>
         </div>
         <div class="cell">
-            <chl-input label="Number of Vehicles" id="numVehicles" isNumberField="true" isRequired="true" [control]="contactForm.get('numVehicles')" errorMessage="Number of vehicles is required"></chl-input>
+            <chl-input label="Number of units" id="numVehicles" isNumberField="true" isRequired="true" [control]="contactForm.get('numVehicles')" errorMessage="Number of vehicles is required"></chl-input>
         </div>
         <div class="cell">
             <chl-input label="Delivery date" id="date" isRequired="true" [control]="contactForm.get('date')" errorMessage="Date is required"></chl-input>

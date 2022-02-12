@@ -7,6 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
+  
   constructor(private _titleService: Title) { }
 
   ngOnInit(): void {

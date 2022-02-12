@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     height: auto;
-    background-image: url('../../assets/images/bg-2.jpg');
+    background-image: url('../../assets/images/bg-3.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-size: cover;
@@ -45,4 +45,12 @@ ul {
 .wrapper {
     padding: 4rem 0rem;
     text-align: center;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+.description p {
+    margin: 0;
 }
